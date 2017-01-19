@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+/*reset 全局定义*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,b{margin:0;padding:0;}
+b{font-weight:normal;}
+fieldset,img{border:0;}
+ul,li{list-style:none;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+input,textarea,select{*font-size:100%;}
+/* body标记样式定义全局的字体颜色、背景色和文本对齐设置 */
+body{color: #656565;background:url(body_bg.gif) repeat-x; text-align: left; font-size:75.00%; font-family: '����','lucidagrande',taho,verdana,'trebuchet ms',sans-serif; line-height:180%;}
+/* hx系列 */
+h1, h2, h3, h4, h5, h6{font-weight: bold; }
+h1{ font-size: 200%;}
+h2{ font-size: 166.67%;}
+h3{ font-size: 150%;}
+h4{ font-size: 133.33%;}
+h5{ font-size: 116.67%;}
+h6{font-size: 116.67%;font-style: italic;}
+/* 着重标记 */
+cite, blackquote, em, i{font-style: italic; }
+strong, b{ font-weight:bold; }
+/* 预格式标记 */
+pre, code{font-family:monospace; font-size: 1.1em;}
+/* 缩写标记 */
+acronym,abbr{border-bottom: 0.1em dashed #c00;cursor: help;letter-spacing: .07em;}
+/* 定义默认的链接样式 */
+a:link,a:visited{color:#464646; text-decoration: none;}
+a:hover,a:active{color:#064976;text-decoration:underline;}
+/* 清除溢出，浮动 */
+.clearing, .HackBox{border-top:1px solid transparent !important; clear:both; visibility: hidden;}
+/* 不需要额外增加元素的清理浮动的类使用:after伪类来实现浮动清理 */
+.wrapfix:after{ content:"."; display: block; height: 0; clear: both;visibility:hidden;}
+/* IE7 hack */
+.wrapfix {display: inline-block;}
+/* IE-mac, IE5, IE6*/
+* html .wrapfix {height:1%;}
+.wrapfix {display:block;}
+/*隐藏元素*/
+.invisible{visibility:hidden;}
+/* 从页面布局上隐藏元素*/
+.hidden{display:none;}
+/* 通用容器 */
+.wrapper{clear: both;overflow: hidden;}
+/*--框架--*/
+#main{width:1002px;margin:0 auto; overflow:hidden;}
